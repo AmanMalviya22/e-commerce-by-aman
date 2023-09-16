@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // connecting mongoose to its default server and ecommerceDB
-mongoose.connect('mongodb://localhost:27017', {
+mongoose.connect('mongodb://localhost:27017/ecommerceDB', {
     useNewUrlParser: true
 });
 
