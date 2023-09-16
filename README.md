@@ -1,7 +1,12 @@
-#E-Commerce API by Aman
+# E-Commerce API by Aman
 This is an e-commerce API that allows you to view products, update product quantities, and delete products.
 
-Setup Instructions
+# Live url of api  https://e-commerce-api-by-aman.onrender.com/
+# step how to use it 
+# type https://e-commerce-api-by-aman.onrender.com/product  in browser to see product list
+# type https://e-commerce-api-by-aman.onrender.com/{product id}/quantity/{enter the number u want to set }  to update product quantity.
+
+# Setup Instructions
 Step 1: Clone the Repository
 Clone this repository to your local machine using Git:
 
@@ -17,17 +22,15 @@ Navigate to the project directory and open the .env file.
 b. Update MongoDBURL
 Change the MongoDBURL from the default remote URL to the local MongoDB URL:
 
-plaintext
-Copy code
-MongoDBURL=mongodb://127.0.0.1:27017/test
+
+
+# MongoDBURL=mongodb://127.0.0.1:27017/test
 Step 3: Start the API Server
 Run the following command to start the API server:
 
-bash
-Copy code
 node index.js
 Step 4: Test the API Using Postman
-Create Products:
+
 Open Postman.
 
 Set the URL to localhost:8000/product.
@@ -42,7 +45,7 @@ Set the HTTP method to POST.
 
 Click the "Send" button to create a new product.
 
-Update Product Quantity:
+# Update Product Quantity:
 In Postman, set the URL to localhost:8000/product/{product_id}/quantity/{new_quantity}.
 
 Replace {product_id} with the ID of the product you want to update.
@@ -51,7 +54,7 @@ Set the HTTP method to PUT.
 
 Click the "Send" button to update the product quantity.
 
-Delete Product:
+# Delete Product:
 In Postman, set the URL to localhost:8000/product/{product_id}.
 
 Replace {product_id} with the ID of the product you want to delete.
