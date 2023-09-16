@@ -12,7 +12,7 @@ router.get('/', async function(req, res) {
     }
 });
 
-// Function to create a new product
+// to create a new product
 router.post('/create', async function(req, res) {
     try {
         const { name, quantity } = req.body;
